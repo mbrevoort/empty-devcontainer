@@ -3,7 +3,7 @@
 {
 	"name": "Empty",
 
-    "image": "alpine",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
