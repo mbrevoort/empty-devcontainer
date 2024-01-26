@@ -7,9 +7,12 @@
 
     "mounts": ["source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"],
 
+	// for tailscale
+	"runArgs": ["--device=/dev/net/tun"],
+
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/tailscale/codespace/tailscale": {}
 	}
-
 }
